@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADMINISTRADOR"
+        android:textSize="25sp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="-40dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="400dp">
+            <Button
+                android:id="@+id/bt1"
+                android:background="@drawable/busc"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="25dp"
+                />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscador Libro"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/bt2"
+                android:background="@drawable/prest"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="60dp"
+                />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prestamos/Devoluciones"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="-40dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="400dp">
+            <Button
+                android:id="@+id/bt3"
+                android:background="@drawable/inventar"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="25dp"
+                />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gestión inventario"
+                android:textAlignment="center"
+                />
+            <Button
+                android:id="@+id/bt4"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/notificac"
+                android:layout_width="115dp"
+                android:layout_height="115dp" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notificaciones"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt5"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Prototipo Anaquel"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>
